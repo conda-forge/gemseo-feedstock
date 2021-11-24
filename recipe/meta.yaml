@@ -1,5 +1,5 @@
 {% set name = "gemseo" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gemseo-{{ version }}.tar.gz
-  sha256: f317a2bc43e595b8b4f69b4439a376e0c7c3271475f22940646eaa4e9f960619
+  sha256: 818cc40a45945159e09dba45ce15af5340384fc9d8b73f852a8f203898181fac
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python  # [py==36 or py==37 or py==38 or py==39]
-  run :
+  run:
     - custom-inherit ==2.3.1
     - python-fastjsonschema <=2.15.1
     - future
