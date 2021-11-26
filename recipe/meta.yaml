@@ -32,12 +32,13 @@ requirements:
     - matplotlib-base >=2,<=3.4.3
     - networkx >=2.2,<=2.5
     - numpy >=1.10,<=1.20.3
+    - packaging <=21.3
     - python  # [py==36 or py==37 or py==38 or py==39]
     - pyxdsm <=2.2.0
     - requests
     - scipy >=1.1,<=1.7.1
     - six
-    - tqdm >=4,<=4.61.0
+    - tqdm >=4.41,<=4.61.0
     - xdsmjs >=1.0.0,<=1.0.1
     - nlopt >=2.4.2,<=2.7.0
     - openturns >=1.13,<=1.18
