@@ -1,5 +1,5 @@
 {% set name = "gemseo" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gemseo-{{ version }}.tar.gz
-  sha256: 818cc40a45945159e09dba45ce15af5340384fc9d8b73f852a8f203898181fac
+  sha256: 7c4b0e362ac118eda8e0f3c8b1e98fce20065a1015770c2740dfe115b344243e
 
 build:
   number: 0
@@ -32,12 +32,13 @@ requirements:
     - matplotlib-base >=2,<=3.4.3
     - networkx >=2.2,<=2.5
     - numpy >=1.10,<=1.20.3
+    - packaging <=21.3
     - python  # [py==36 or py==37 or py==38 or py==39]
     - pyxdsm <=2.2.0
     - requests
     - scipy >=1.1,<=1.7.1
     - six
-    - tqdm >=4,<=4.61.0
+    - tqdm >=4.41,<=4.61.0
     - xdsmjs >=1.0.0,<=1.0.1
     - nlopt >=2.4.2,<=2.7.0
     - openturns >=1.13,<=1.18
