@@ -51,6 +51,7 @@ requirements:
     - xlwings <=0.21.4  # [win]
     - python-graphviz ==0.16
     - pdfo ==1.0.0
+    - python-xxhash ==3.0.0
 
 test:
   imports:
