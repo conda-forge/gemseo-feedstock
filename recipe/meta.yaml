@@ -1,5 +1,5 @@
 {% set name = "gemseo" %}
-{% set version = "4.0.1" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gemseo-{{ version }}.tar.gz
-  sha256: fa4ec4e6bf3ccbd6834bedd85d3e94f2b29b82d3173dd3227a6003db11744f1b
+  sha256: cfda7d0015fb1fb60b5baf8fcdbc2c88c2bc9527ac4932cc303428764fe2aa33
 
 build:
   number: 0
@@ -23,34 +23,34 @@ requirements:
   run:
     - docstring-inheritance ==1.0.0
     - genson ==1.2.2
-    - h5py >=2.3,<=3.6.0
-    - importlib_metadata  # [py==37]
-    - jinja2 <=3.1.2
-    - matplotlib-base >=2,<=3.5.2
-    - networkx >=2.2,<=2.8.5
-    - nlopt >=2.4.2,<=2.7.1
-    - numpy >=1.10,<=1.23.1
+    - h5py >=3.0.0,<=3.7.0
+    - importlib-metadata <5  # [py==37]
+    - jinja2 >=3.0.0,<=3.1.2
+    - matplotlib-base >=3.3.0,<=3.6.0
+    - networkx >=2.2,<=2.8.6
+    - nlopt >=2.7.0,<=2.7.1
+    - numpy >=1.21,<=1.23.3
     - openpyxl <=3.0.10
     - openturns >=1.16,<=1.18
     - packaging <=21.3
-    - pandas >=0.16,<=1.4.3
+    - pandas >=1.1.0,<=1.5.0
     - pdfo >=1.0.0,<=1.2
-    - pydoe2 >=0.3.8,<=1.3.0
+    - pydoe2 >=1.0.2,<=1.3.0
     - pyside2
     - python
-    - python-graphviz >=0.16,<=0.20
-    - python-fastjsonschema <=2.16.1
+    - python-graphviz >=0.16,<=0.20.1
+    - python-fastjsonschema >=2.14.5,<=2.16.2
     - python-xxhash ==3.0.0
-    - pyxdsm <=2.2.1
+    - pyxdsm >=2.1.0,<=2.2.2
     - requests
-    - scikit-learn >=0.18,<=1.1.1
-    - scipy >=1.1,<=1.7.3
-    - singledispatchmethod  # [py==37]
-    - sympy >=0.7,<=1.10.1
-    - tqdm >=4.41,<=4.64.0
+    - scikit-learn >=0.18,<=1.1.2
+    - scipy >=1.4,<=1.9.1
+    - singledispatchmethod ==1.0  # [py==37]
+    - sympy >=1.5,<=1.11.1
+    - tqdm >=4.41,<=4.64.1
     - typing-extensions >=4,<5
     - xdsmjs >=1.0.0,<=1.0.1
-    - xlwings ==0.27.*  # [win]
+    - xlwings >=0.27.0,<=0.27.15  # [win]
 
 test:
   imports:
