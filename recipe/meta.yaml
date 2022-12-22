@@ -10,7 +10,7 @@ source:
   sha256: cfda7d0015fb1fb60b5baf8fcdbc2c88c2bc9527ac4932cc303428764fe2aa33
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - gemseo-study = gemseo.utils.study_analysis_cli:main
     - gemseo-template-grammar-editor = gemseo.wrappers.template_grammar_editor:main
