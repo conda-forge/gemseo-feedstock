@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gemseo-{{ version }}.tar.gz
-  sha256: f23fcff28928c10e35f22688baa45bb467a7c9d8ee3afb50518e5e4462a67cc2
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gemseo-{{ version }}.post0.tar.gz
+  sha256: c4294d6a435ae796fb2b215da68c591b672300eb2c5d17f5e46fdec2e1186d5e
 
 build:
   skip: true  # [py>=311]
@@ -15,7 +15,7 @@ build:
     - gemseo-study = gemseo.utils.study_analysis_cli:main
     - gemseo-template-grammar-editor = gemseo.wrappers.template_grammar_editor:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps
-  number: 1
+  number: 2
 
 requirements:
   host:
