@@ -1,12 +1,12 @@
 {% set name = "gemseo" %}
-{% set version = "4.3.0" %}
+{% set version = "4.3.0.post0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gemseo-{{ version }}.post0.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c4294d6a435ae796fb2b215da68c591b672300eb2c5d17f5e46fdec2e1186d5e
 
 build:
@@ -15,7 +15,7 @@ build:
     - gemseo-study = gemseo.utils.study_analysis_cli:main
     - gemseo-template-grammar-editor = gemseo.wrappers.template_grammar_editor:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps
-  number: 2
+  number: 0
 
 requirements:
   host:
