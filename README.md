@@ -1,11 +1,11 @@
-About gemseo
-============
+About gemseo-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gemseo-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.com/gemseo
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gemseo-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generic Engine for Multi-disciplinary Scenarios, Exploration and Optimization
 
