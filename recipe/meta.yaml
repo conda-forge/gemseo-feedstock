@@ -10,7 +10,7 @@ source:
   sha256: 17d4e5f2c78a87067f2667ce0c8ce634bee77b8156d214a0dbf0fbf9eeef5b35
 
 build:
-  skip: true  # [py<39,py>311]
+  skip: true  # [py<39 or py>311]
   entry_points:
     - gemseo-study = gemseo.utils.study_analyses.study_analysis_cli:main
     - gemseo-deserialize-run = gemseo.utils.deserialize_and_run:main
