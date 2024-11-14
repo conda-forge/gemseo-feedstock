@@ -26,7 +26,7 @@ requirements:
   run:
     - python
     - docstring-inheritance >=1.0.0,<=2.2.1
-    - eval-type-backport==0.2.0  # [py<310]
+    - eval-type-backport ==0.2.0  # [py<310]
     - python-fastjsonschema >=2.14.5,<=2.20.0
     - genson >=1.2.2,<=1.3.0
     - h5py >=3.0.0,<=3.11.0
