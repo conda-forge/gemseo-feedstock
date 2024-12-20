@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f28ad4509dd249945d1d5deade115c40b13726cef637a79952bbc1d52427efe5
 
 build:
@@ -15,7 +15,7 @@ build:
     - gemseo-study = gemseo.utils.study_analyses.study_analysis_cli:main
     - gemseo-deserialize-run = gemseo.utils.deserialize_and_run:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
