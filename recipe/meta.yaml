@@ -57,7 +57,7 @@ requirements:
     - pyDOE3 >=1.0.1,<=1.0.4
     - scikit-learn >=1.2,<=1.6.1
     - sympy >=1.5,<=1.13.3
-    - xlwings >=0.27.0,<=0.30.4  # [win]
+    - xlwings >=0.27.0,<=0.30.4  # [win, py<312]
 
 test:
   imports:
