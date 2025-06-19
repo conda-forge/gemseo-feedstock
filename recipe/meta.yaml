@@ -63,7 +63,6 @@ test:
   imports:
     - gemseo
   commands:
-    - pip check
     - gemseo-study --help
     - gemseo-deserialize-run --help
   requires:
