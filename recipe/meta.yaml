@@ -1,5 +1,5 @@
 {% set name = "gemseo" %}
-{% set version = "6.1.0" %}
+{% set version = "6.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: edf62aa8931f81e9f7523db7f47745e34d27b4fdc6af29fc628600eda0dfaf79
+  sha256: d9352346025f9cd57c200a7f4fe26128501eaf610546ae11d85c072b0db05e3b
 
 build:
   skip: true  # [py>=313 or py2k]
