@@ -15,7 +15,7 @@ build:
     - gemseo-study = gemseo.utils.study_analyses.study_analysis_cli:main
     - gemseo-deserialize-run = gemseo.utils.deserialize_and_run:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
