@@ -1,5 +1,5 @@
 {% set name = "gemseo" %}
-{% set version = "6.3.0" %}
+{% set version = "6.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 30d66a666f3103067b386471e9d153bc1f8cd009a57af2500fe795bc461de21e
+  sha256: d9352346025f9cd57c200a7f4fe26128501eaf610546ae11d85c072b0db05e3b
 
 build:
-  skip: true  # [py>=313 or py2k]
+  skip: true  # [py>=314 or py2k]
   entry_points:
     - gemseo-study = gemseo.utils.study_analyses.study_analysis_cli:main
     - gemseo-deserialize-run = gemseo.utils.deserialize_and_run:main
@@ -26,38 +26,39 @@ requirements:
   run:
     - python
     - docstring-inheritance >=2.0.0,<=2.2.2
-    - eval-type-backport ==0.2.2  # [py<310]
-    - python-fastjsonschema >=2.14.5,<=2.21.1
+    - python-fastjsonschema >=2.14.5,<=2.21.2
     - genson >=1.2.2,<=1.3.0
-    - h5py >=3.0.0,<=3.13.0
-    - importlib-metadata >=3.6  # [py<310]
+    - h5py >=3.6.0,<=3.14.0
     - jinja2 >=3.0.0,<=3.1.6
-    - matplotlib-base >=3.6.0,<=3.10.1
-    - networkx >=2.5,<=3.4.2
-    - numpy >=1.23,<=1.26.4
-    - packaging >=15,<=24.2
-    - pandas >=1.5.0,<=2.2.3
-    - prettytable >=2.3.0,<=3.15.1
+    - matplotlib-base >=3.6.0,<=3.10.6
+    - networkx >=2.5,<=3.5
+    - numpy >=1.23,<=2.3.3
+    - packaging >=15,<=25
+    - pandas >=2.1.0,<=2.3.2
+    - prettytable >=2.3.0,<=3.16.0
     - pyxdsm >=2.2.1,<=2.3.1
-    - pydantic >=2.6,<=2.10.6
-    - requests <3
-    - scipy >=1.11,<=1.15.2
+    - pydantic >=2.7,<=2.11.9
+    - pydantic-settings >=2.1.0,<=2.11.0
+    - requests >2,<3
+    - scipy >=1.12,<=1.15.2
     - strenum >=0.4.9,<=0.4.15
     - tqdm >=4.50,<=4.67.1
     - typing_extensions >=4,<5
     - xdsmjs >=1.0.0,<=2.0.0
     - python-xxhash >=3.0.0,<=3.5.0
+    - minisom >=2.3.5,<2.4
 # Extra: all
-    - python-graphviz >=0.19,<=0.20.3
-    - nlopt >=2.7.0,<=2.7.1
-    - openpyxl >=3.0.7,<=3.1.5
-    - openturns >=1.20,<=1.24
-    - pillow >=9.5.0,<=11.1.0
-    - plotly >=5.7.0,<=5.24.1
-    - pyDOE3 >=1.0.1,<=1.0.4
-    - scikit-learn >=1.2,<=1.6.1
-    - sympy >=1.5,<=1.13.3
-    - xlwings >=0.27.0,<=0.30.4  # [win and py<312]
+    - python-graphviz >=0.19,<=0.21
+    - nlopt >=2.7.0,<=2.9.1
+    - openpyxl >=3.0.10,<=3.1.5
+    - openturns >=1.20,<=1.25
+    - pillow >=9.5.0,<=11.3.0
+    - plotly >=5.7.0,<=6.3.0
+    - pyDOE3 >=1.0.1,<=1.4.0
+    - scikit-learn >=1.2,<=1.7.2
+    - spgl1 >=0.0.3,<=1.0.0
+    - sympy >=1.5,<=1.14.0
+    - xlwings >=0.27.0,<=0.33.6  # [win and py<312]
 
 test:
   imports:
@@ -69,7 +70,7 @@ test:
     - pip
 
 about:
-  home: https://gitlab.com/gemseo
+  home: https://gemseo.org
   summary: Generic Engine for Multi-disciplinary Scenarios, Exploration and Optimization
   dev_url: https://gitlab.com/gemseo/dev/gemseo
   license: LGPL-3.0-or-later
