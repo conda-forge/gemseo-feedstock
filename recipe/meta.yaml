@@ -14,13 +14,14 @@ build:
   entry_points:
     - gemseo-study = gemseo.utils.study_analyses.study_analysis_cli:main
     - gemseo-deserialize-run = gemseo.utils.deserialize_and_run:main
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  number: 1
 
 requirements:
   host:
     - python
     - setuptools
+    - setuptools_scm
     - pip
   run:
     - python
