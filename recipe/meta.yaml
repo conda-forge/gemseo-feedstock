@@ -1,5 +1,5 @@
 {% set name = "gemseo" %}
-{% set version = "6.3.1" %}
+{% set version = "6.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4670a65823dd3a18d2a0e440a7eee853333855bc6af82add44f5a56eb895f50a
+  sha256: 2f7821c2cf297c33ad78b30935885150706649748ff8323a1e7996db5bf78229
 
 build:
   skip: true  # [py>=314 or py2k]
@@ -46,13 +46,13 @@ requirements:
     - typing_extensions >=4,<5
     - xdsmjs >=1.0.0,<=2.0.0
     - python-xxhash >=3.0.0,<=3.5.0
-    - minisom >=2.3.5,<2.4
+    - minisom >=2.3.5,<=2.3.5
 # Extra: all
     - python-graphviz >=0.19,<=0.21
     - nlopt >=2.7.0,<=2.9.1
     - openpyxl >=3.0.10,<=3.1.5
     - openturns >=1.20,<=1.25
-    - pillow >=9.5.0,<=11.3.0
+    - pillow >=9.5.0,<=12.2.0
     - plotly >=5.7.0,<=6.3.0
     - pyDOE3 >=1.0.1,<=1.4.0
     - scikit-learn >=1.2,<=1.7.2
