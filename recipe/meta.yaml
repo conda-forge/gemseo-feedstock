@@ -1,5 +1,5 @@
 {% set name = "gemseo" %}
-{% set version = "6.3.2" %}
+{% set version = "6.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2f7821c2cf297c33ad78b30935885150706649748ff8323a1e7996db5bf78229
+  sha256: 1337638817c2bbdec35d9022fb2e61ce8da60bb71d49e88f9e2ca8aba4d3fe89
 
 build:
   skip: true  # [py>=314 or py2k]
@@ -15,7 +15,7 @@ build:
     - gemseo-study = gemseo.utils.study_analyses.study_analysis_cli:main
     - gemseo-deserialize-run = gemseo.utils.deserialize_and_run:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps
-  number: 1
+  number: 0
 
 requirements:
   host:
